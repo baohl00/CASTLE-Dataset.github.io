@@ -1,79 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASTLE Dataset</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>CASTLE Dataset</h1>
-        <p>Advancing the state of the art in multimodal understanding</p>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CASTLE Dataset</title>
+        <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+        <link rel="stylesheet" href="styles.css">
 
-    <nav>
-        <ul>
-            <li><a href="#motivation">Motivation</a></li>
-            <li><a href="#dataset">Dataset</a></li>
-            <li><a href="#tasks">Challenge Tasks</a></li>
-            <li><a href="#evaluation">Evaluation</a></li>
-            <li><a href="#organizers">Organizers</a></li>
-            <li><a href="#timeline">Timeline</a></li>
-        </ul>
-    </nav>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>CASTLE Dataset</h1>
+                <p>Advancing the state of the art in multimodal understanding</p>
+            </div>
+        </header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#preview">Dataset Preview</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#stats">Dataset Stats</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#challenges">Challenges</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <section id="motivation">
-        <h2>Motivation</h2>
-        <p>The increasing availability of mobile computing devices equipped with a variety of sensors enables us to capture and quantify more and more aspects of the human condition...</p>
-    </section>
+        <main>
+            <div class="container">
+                <!-- YouTube Preview -->
+                <section id="preview">
+                    <h2>Dataset Preview</h2>
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/9Y9dXNHvIhk" frameborder="0" allowfullscreen></iframe>
+                </section>
 
-    <section id="dataset">
-        <h2>Dataset</h2>
-        <p>The dataset consists of time-aligned data streams, captured by multiple different sensors, including both stationary and head-mounted high-resolution cameras and microphones...</p>
-        <p><strong>Preview:</strong> <a href="https://www.youtube.com/watch?v=9Y9dXNHvIhk" target="_blank">Watch on YouTube</a></p>
-    </section>
+                <!-- About Section -->
+                <section id="about">
+                    <h2>About</h2>
+                    <h3>What is CASTLE?</h3>
+                    <p>The CASTLE dataset is a large-scale, multimodal dataset designed for advancing research in lifelogging, human activity recognition, and multimodal retrieval. It provides a rich collection of time-aligned sensor and video data for analysis and benchmarking.</p>
 
-    <section id="tasks">
-        <h2>Challenge Tasks</h2>
-        <ul>
-            <li><strong>Event Instance Search:</strong> Identify all timeframes where a specific event occurs.</li>
-            <li><strong>Object Instance Search:</strong> Find all occurrences of a given object in the video streams.</li>
-            <li><strong>Question Answering:</strong> Answer questions using natural language and references to sensor streams.</li>
-        </ul>
-    </section>
+                    <h3>Characteristics</h3>
+                    <ul>
+                        <li>Captured over <strong>four days</strong> in a controlled environment</li>
+                        <li><strong>11 participants</strong> engaged in natural activities</li>
+                        <li><strong>15 video streams</strong> (10 egocentric, 5 static perspectives)</li>
+                        <li>Over <strong>700 hours</strong> of UHD 50fps video with audio</li>
+                        <li>Includes <strong>6DoF IMU, GPS, and biometric data</strong></li>
+                    </ul>
+                </section>
 
-    <section id="evaluation">
-        <h2>Evaluation</h2>
-        <p>The challenge operates across two tracks: fully-automatic and interactive...</p>
-    </section>
+                <!-- Stats Section -->
+                <section id="stats">
+                    <h2>Dataset Stats (To be Updated)</h2>
+                    <p>We are currently processing statistics for the dataset. More details will be available soon.</p>
 
-    <section id="organizers">
-        <h2>Organizers</h2>
-        <ul>
-            <li>Werner Bailer (JOANNEUM RESEARCH) - <a href="mailto:werner.bailer@joanneum.at">Email</a></li>
-            <li>Cathal Gurrin (DCU) - <a href="mailto:cathal.gurrin@dcu.ie">Email</a></li>
-            <li>Duc-Tien Dang-Nguyen (University of Bergen) - <a href="mailto:ductien.dangnguyen@uib.no">Email</a></li>
-            <li>Luca Rossetto (DCU) - <a href="mailto:luca.rossetto@dcu.ie">Email</a></li>
-            <li>Klaus Schoeffmann (Klagenfurt University) - <a href="mailto:klaus.schoeffmann@aau.at">Email</a></li>
-            <li>Allie (Ly-Duyen) Tran (DCU) - <a href="mailto:allie.tran@dcu.ie">Email</a></li>
-        </ul>
-    </section>
+                    <!-- floor plan -->
+                    <figure>
+                        <img src="Castle.png" alt="Castle Floor Plan" style="width:400px;height:400px;">
+                        <figcaption>Castle Floor Plan (not to scale)</figcaption>
+                    </figure>
+                </section>
 
-    <section id="timeline">
-        <h2>Timeline</h2>
-        <ul>
-            <li><strong>03.03.2025:</strong> Challenge announcement, publication of website</li>
-            <li><strong>03.03.2025:</strong> Registration Opens</li>
-            <li><strong>24.03.2025:</strong> Dataset and Query release</li>
-            <li><strong>30.06.2025:</strong> Fully-automated Solution / Paper submission deadline</li>
-            <li><strong>24.07.2025:</strong> Notification to Authors</li>
-            <li><strong>26.08.2025:</strong> Camera-ready deadline</li>
-        </ul>
-    </section>
+                <!-- Download Section -->
+                <section id="download">
+                    <h2>Download</h2>
+                    <p>The dataset is currently being prepared for release. Please check back soon for updates.</p>
 
-    <footer>
-        <p>&copy; 2025 CASTLE Challenge. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+                    <h3>License</h3>
+                    <p>The CASTLE dataset is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+
+                    <h3>Terms of Use</h3>
+                    <p>By downloading the dataset, you agree to the following terms:</p>
+                    <ul>
+                        <li>The dataset is provided for research purposes only.</li>
+                        <li>You will not use the dataset for any commercial purposes.</li>
+                        <li>You will not distribute the dataset or any derivative works to others.</li>
+                        <li>You will provide appropriate credit to the dataset authors in your publications.</li>
+                    </ul>
+
+                    <h3>Download Links</h3>
+                    <ul>
+                        <li><a href="#">CASTLE Dataset (Coming Soon)</a></li>
+                        <li><a href="#">Sample Data (Coming Soon)</a></li>
+                    </ul>
+
+                    <h3>Contact</h3>
+                    <p>If you have any questions about the dataset or licensing, please contact the team <a href="mailto:luca.rossetto@dcu.ie">here</a>.</p>
+
+                </section>
+
+                <!-- Challenges Section -->
+                <section id="challenges">
+                    <h2>Challenges</h2>
+
+                    <h3>Timeline</h3>
+                    <ul>
+                        <li><strong>03 March 2025:</strong> Challenge Announcement & Website Launch</li>
+                        <li><strong>03 March 2025:</strong> Registration Opens</li>
+                        <li><strong>24 March 2025:</strong> Dataset & Query Release</li>
+                        <li><strong>30 June 2025:</strong> Fully-Automated Submission Deadline</li>
+                        <li><strong>24 July 2025:</strong> Notification to Authors</li>
+                        <li><strong>26 August 2025:</strong> Camera-Ready Deadline</li>
+                    </ul>
+
+                    <h3>Guidelines for Participants</h3>
+                    <p>Participants will be required to register and agree to the dataset usage policy. Details regarding dataset licensing and submission guidelines will be provided upon release.</p>
+
+                    <h3>Tasks</h3>
+                    <p>
+                        The inaugural edition of the CASTLE Challenge features a diverse set of tasks, including event detection, retrieval, and question answering. Future editions will expand the scope, but for this edition, the tasks include:
+                    </p>
+
+
+                    <div class="task-list">
+                        <h5>🔍 Event Instance Search</h5>
+                        <p>
+                            Given a textual description (in English), participants must identify all timeframes where a specific event occurs.
+                            Events should be reported with both a <strong>time range</strong> and a <strong>video ID</strong>.
+                        </p>
+
+                        <h5>📦 Object Instance Search</h5>
+                        <p>
+                            Given a textual (in English) or visual (i.e., using an image) example of a physical object, participants must find all occurrences of that object across any of the video streams.
+                        </p>
+
+                        <h5>💬 Question Answering</h5>
+                        <p>
+                            Given a question in natural language (in English), participants must provide an answer. The response should be formulated in natural language and include references to relevant <strong>sensor streams</strong> and <strong>time intervals</strong> as supporting evidence.
+                        </p>
+                    </div>
+                    <!-- Evaluation Section -->
+                        <h3>Evaluation</h3>
+                        <p>
+                            The challenge will operate across two tracks: <strong>fully-automatic</strong> and <strong>interactive</strong>.
+                        </p>
+                        <div class="evaluation-track">
+                            <h5>⚙️ Fully-Automatic Track</h5>
+                            <p>
+                                Participants receive queries in advance and generate results using any method they choose. These results are then submitted to the challenge organizers for evaluation.
+                            </p>
+                        </div>
+                        <div class="evaluation-track">
+                            <h5>🎮 Interactive Track</h5>
+                            <p>
+                                This track will be evaluated live during the conference. Participants must solve tasks <strong>synchronously</strong> and <strong>interactively</strong> within a limited timeframe. This format follows established competitions such as the <em>Video Browser Showdown</em> and the <em>Lifelog Search Challenge</em>.
+                            </p>
+                        </div>
+                </section>
+
+                <section id="team">
+                    <h2>Meet Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <h5>Werner Bailer</h3>
+                            <p>JOANNEUM RESEARCH</p>
+                            <a href="mailto:werner.bailer@joanneum.at">Contact</a>
+                        </div>
+                        <div class="team-member">
+                            <h5>Cathal Gurrin</h3>
+                            <p>Dublin City University</p>
+                            <a href="mailto:cathal.gurrin@dcu.ie">Contact</a>
+                        </div>
+                        <div class="team-member">
+                            <h5>Duc-Tien Dang-Nguyen</h3>
+                            <p>University of Bergen</p>
+                            <a href="mailto:ductien.dangnguyen@uib.no">Contact</a>
+                        </div>
+                        <div class="team-member">
+                            <h5>Luca Rossetto</h3>
+                            <p>Dublin City University</p>
+                            <a href="mailto:luca.rossetto@dcu.ie">Contact</a>
+                        </div>
+                        <div class="team-member">
+                            <h5>Klaus Schoeffmann</h3>
+                            <p>Klagenfurt University</p>
+                            <a href="mailto:klaus.schoeffmann@aau.at">Contact</a>
+                        </div>
+                        <div class="team-member">
+                            <h5>Allie (Ly-Duyen) Tran</h3>
+                            <p>Dublin City University</p>
+                            <a href="mailto:allie.tran@dcu.ie">Contact</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 CASTLE Challenge. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
