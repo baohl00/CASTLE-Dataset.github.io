@@ -223,3 +223,8 @@ figcaption {
     gap: 1rem;
     grid-template-columns: 1fr 2fr; /* First column (task name) takes 1 fraction, second takes 2 */
 }
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
