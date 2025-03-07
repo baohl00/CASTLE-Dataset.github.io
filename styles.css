@@ -186,7 +186,8 @@ h3 {
     border-radius: 5px;
     display: inline-block;
     transition: background 0.3s;
-    color: var(--primary-color);
+    color: #816bca;
+    /* color: var(--primary-color); */
 }
 
 .team-member a:hover {
